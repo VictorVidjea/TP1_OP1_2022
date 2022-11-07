@@ -67,20 +67,11 @@ Fichiers non suivis:
 	libX11-1.4.99.1-mingw32.zip
 	libX11-1.4.99.1-mingw32/
 	opencv/
-	snap/
-	ssh_key.odt
+	snap/ssh_key.odt
 	ssh_key.odt.pub
 
 
  
-Q6) après avoir "commit" il ya ce message 
-
-[master (commit racine) b910660] Un superMessage
- 2 files changed, 5 insertions(+)
- create mode 100644 TP1
- create mode 100644 nouveau_fichier
-
-puis après avoir fait git status il n'y a rien
 
 
 après avoir fait git push 
