@@ -4,8 +4,75 @@ après il y a écrit ceci: Modifications qui seront validées :
   (utilisez "git rm --cached <fichier>..." pour désindexer)
 	nouveau fichier : TP1
 	nouveau fichier : nouveau_fichier
+Q4) le message suivant apparaît:
+Modifications qui ne seront pas validées :
+  (utilisez "git add <fichier>..." pour mettre à jour ce qui sera validé)
+  (utilisez "git restore <fichier>..." pour annuler les modifications dans le répertoire de travail)
+	modifié :         TP1
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+	.bash_history
+	.cache/
+	.config/
+	.java/
+	.local/
+	.openarena/
+	.pki/
+	.sudo_as_admin_successful
+	.thunderbird/
+	.vscode/
+	Bureau/
+	Documents/
+	Images/
+	"T\303\251l\303\251chargements/"
+	Victor_Vidjeabascarane.txt
+	libX11-1.4.99.1-mingw32.zip
+	libX11-1.4.99.1-mingw32/
+	opencv/
+	snap/
+	ssh_key.odt
+	ssh_key.odt.pub
+
+aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a")
+
+ce message montre que les modification du git n'ont pas été pris en compte.
+pour qu'il soit pris en compte il faudrait utiliser git add <fichier>
 
 
+Q5) Voici le message suivant: après git add TP1 et git status:
+
+Sur la branche master
+Modifications qui seront validées :
+  (utilisez "git restore --staged <fichier>..." pour désindexer)
+	modifié :         TP1
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+	.bash_history
+	.cache/
+	.config/
+	.java/
+	.local/
+	.openarena/
+	.pki/
+	.sudo_as_admin_successful
+	.thunderbird/
+	.vscode/
+	Bureau/
+	Documents/
+	Images/
+	"T\303\251l\303\251chargements/"
+	Victor_Vidjeabascarane.txt
+	libX11-1.4.99.1-mingw32.zip
+	libX11-1.4.99.1-mingw32/
+	opencv/
+	snap/
+	ssh_key.odt
+	ssh_key.odt.pub
+
+
+ 
 Q6) après avoir "commit" il ya ce message 
 
 [master (commit racine) b910660] Un superMessage
@@ -13,7 +80,7 @@ Q6) après avoir "commit" il ya ce message
  create mode 100644 TP1
  create mode 100644 nouveau_fichier
 
-puis après avoir fait git status il y n'y a rien
+puis après avoir fait git status il n'y a rien
 
 
 après avoir fait git push 
@@ -48,9 +115,6 @@ index c903a0c..59460a7 100644
 +
 + 
  
-https://github.com/Polytech-Sorbonne-OPI-2022/TP1-EISE3
+le site dans lequelle il faut commit le fichier:  https://github.com/Polytech-Sorbonne-OPI-2022/TP1-EISE3
 
 
-
-
- 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
