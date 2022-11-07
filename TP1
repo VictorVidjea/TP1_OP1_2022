@@ -1,10 +1,11 @@
 Q2) le répertoire .git à été créé
 
-après il y a écrit ceci: Modifications qui seront validées :
+après il y a écrit ceci: 
+"Modifications qui seront validées :
   (utilisez "git rm --cached <fichier>..." pour désindexer)
 	nouveau fichier : TP1
-	nouveau fichier : nouveau_fichier
-Q4) le message suivant apparaît:
+	nouveau fichier : nouveau_fichier"
+Q4) "le message suivant apparaît:
 Modifications qui ne seront pas validées :
   (utilisez "git add <fichier>..." pour mettre à jour ce qui sera validé)
   (utilisez "git restore <fichier>..." pour annuler les modifications dans le répertoire de travail)
@@ -34,7 +35,7 @@ Fichiers non suivis:
 	ssh_key.odt
 	ssh_key.odt.pub
 
-aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a")
+aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a")"
 
 ce message montre que les modification du git n'ont pas été pris en compte.
 pour qu'il soit pris en compte il faudrait utiliser git add <fichier>
@@ -42,7 +43,7 @@ pour qu'il soit pris en compte il faudrait utiliser git add <fichier>
 
 Q5) Voici le message suivant: après git add TP1 et git status:
 
-Sur la branche master
+"Sur la branche master
 Modifications qui seront validées :
   (utilisez "git restore --staged <fichier>..." pour désindexer)
 	modifié :         TP1
@@ -68,27 +69,257 @@ Fichiers non suivis:
 	libX11-1.4.99.1-mingw32/
 	opencv/
 	snap/ssh_key.odt
+	ssh_key.odt.pub"
+
+Q6)
+
+Voici le status du fichier:
+
+
+"Sur la branche master
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+	.bash_history
+	.cache/
+	.config/
+	.gitconfig
+	.java/
+	.local/
+	.openarena/
+	.pki/
+	.sudo_as_admin_successful
+	.thunderbird/
+	.vscode/
+	Bureau/
+	Documents/
+	Images/
+	"T\303\251l\303\251chargements/"
+	Victor_Vidjeabascarane.txt
+	libX11-1.4.99.1-mingw32.zip
+	libX11-1.4.99.1-mingw32/
+	opencv/
+	snap/
+	ssh_key.odt
 	ssh_key.odt.pub
 
+aucune modification ajoutée à la validation mais des fichiers non suivis sont présents (utilisez "git add" pour les suivre)"
 
  
+le fichier à été mis à jour.
+Q7)
 
+voici ce est écrit:
 
-après avoir fait git push 
+"commit 0047b52362c510582a90219c475e595d3a141e28 (HEAD -> master)
+Author: VictorVidjea <6701victor@gmail.com>
+Date:   Mon Nov 7 11:33:45 2022 +0100
+
+    modification1
 
 diff --git a/TP1 b/TP1
-index c903a0c..59460a7 100644
+index 95038de..f0864a1 100644
 --- a/TP1
 +++ b/TP1
-@@ -1,4 +1,24 @@
+@@ -67,20 +67,11 @@ Fichiers non suivis:
+        libX11-1.4.99.1-mingw32.zip
+        libX11-1.4.99.1-mingw32/
+        opencv/
+-       snap/
+-       ssh_key.odt
++       snap/ssh_key.odt
+        ssh_key.odt.pub
+ 
+ 
+  
+-Q6) après avoir "commit" il ya ce message 
+-
+-[master (commit racine) b910660] Un superMessage
+- 2 files changed, 5 insertions(+)
+- create mode 100644 TP1
+- create mode 100644 nouveau_fichier
+-
+-puis après avoir fait git status il n'y a rien
+ 
+ 
+ après avoir fait git push 
+
+commit 7274b26cc5d4eb527bc9d722f36ed5eddd166809
+Author: VictorVidjea <6701victor@gmail.com>
+Date:   Mon Nov 7 11:27:47 2022 +0100
+
+    modification1
+
+diff --git a/TP1 b/TP1
+index f8d892b..95038de 100644
+--- a/TP1
++++ b/TP1
+@@ -4,8 +4,75 @@ après il y a écrit ceci: Modifications qui seront validées :
+   (utilisez "git rm --cached <fichier>..." pour désindexer)
+        nouveau fichier : TP1
+        nouveau fichier : nouveau_fichier
++Q4) le message suivant apparaît:
++Modifications qui ne seront pas validées :
++  (utilisez "git add <fichier>..." pour mettre à jour ce qui sera validé)
++  (utilisez "git restore <fichier>..." pour annuler les modifications dans le répertoire de travail)
++       modifié :         TP1
+ 
++Fichiers non suivis:
++  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
++       .bash_history
++       .cache/
++       .config/
++       .java/
++       .local/
++       .openarena/
++       .pki/
++       .sudo_as_admin_successful
++       .thunderbird/
++       .vscode/
++       Bureau/
++       Documents/
++       Images/
++       "T\303\251l\303\251chargements/"
++       Victor_Vidjeabascarane.txt
++       libX11-1.4.99.1-mingw32.zip
++       libX11-1.4.99.1-mingw32/
++       opencv/
++       snap/
++       ssh_key.odt
++       ssh_key.odt.pub
+ 
++aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a")
++
++ce message montre que les modification du git n'ont pas été pris en compte.
++pour qu'il soit pris en compte il faudrait utiliser git add <fichier>
++
++
++Q5) Voici le message suivant: après git add TP1 et git status:
++
++Sur la branche master
++Modifications qui seront validées :
++  (utilisez "git restore --staged <fichier>..." pour désindexer)
++       modifié :         TP1
++
++Fichiers non suivis:
++  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
++       .bash_history
++       .cache/
++       .config/
++       .java/
++       .local/
++       .openarena/
++       .pki/
++       .sudo_as_admin_successful
++       .thunderbird/
++       .vscode/
++       Bureau/
++       Documents/
++       Images/
++       "T\303\251l\303\251chargements/"
++       Victor_Vidjeabascarane.txt
++       libX11-1.4.99.1-mingw32.zip
++       libX11-1.4.99.1-mingw32/
++       opencv/
++       snap/
++       ssh_key.odt
++       ssh_key.odt.pub
++
++
++ 
+ Q6) après avoir "commit" il ya ce message 
+ 
+ [master (commit racine) b910660] Un superMessage
+@@ -13,7 +80,7 @@ Q6) après avoir "commit" il ya ce message
+  create mode 100644 TP1
+  create mode 100644 nouveau_fichier
+ 
+-puis après avoir fait git status il y n'y a rien
++puis après avoir fait git status il n'y a rien
+ 
+ 
+ après avoir fait git push 
+@@ -48,9 +115,6 @@ index c903a0c..59460a7 100644
+ +
+ + 
+  
+-https://github.com/Polytech-Sorbonne-OPI-2022/TP1-EISE3
+-
+-
++le site dans lequelle il faut commit le fichier:  https://github.com/Polytech-Sorbonne-OPI-2022/TP1-EISE3
+ 
+ 
+- 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
+
+commit 755157ec5d90ea4e4c433c745c0642a2b6644bea (TP1/master)
+Author: VictorVidjea <6701victor@gmail.com>
+Date:   Fri Oct 28 15:54:30 2022 +0200
+
+    Troisiem modif
+
+diff --git a/TP1 b/TP1
+index 820a708..f8d892b 100644
+--- a/TP1
++++ b/TP1
+@@ -6,20 +6,17 @@ après il y a écrit ceci: Modifications qui seront validées :
+        nouveau fichier : nouveau_fichier
+ 
+ 
+-Q6) après avoir "commit" il ya ce message : 
++Q6) après avoir "commit" il ya ce message 
+ 
+ [master (commit racine) b910660] Un superMessage
+  2 files changed, 5 insertions(+)
+  create mode 100644 TP1
+  create mode 100644 nouveau_fichier
+ 
+-puis après avoir fait git status il y a: Sur la branche master
+-
+-modification éem modification
+-mAKE,NFÛDIHAD
+-ADdADd
++puis après avoir fait git status il y n'y a rien
+ 
+ 
++après avoir fait git push 
+ 
+ diff --git a/TP1 b/TP1
+ index c903a0c..59460a7 100644
+
+commit 844e854cc4e62432d1280dec3b43cff4c0cb9655
+Author: VictorVidjea <6701victor@gmail.com>
+Date:   Fri Oct 28 15:31:34 2022 +0200
+
+    deuxiememodiff
+
+diff --git a/TP1 b/TP1
+index 9b3ecda..820a708 100644
+--- a/TP1
++++ b/TP1
+@@ -56,3 +56,4 @@ https://github.com/Polytech-Sorbonne-OPI-2022/TP1-EISE3
+ 
+ 
+ 
++ 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
+
+commit 1384387d18baf467000c20a6e309057dadd27e2b
+Author: VictorVidjea <6701victor@gmail.com>
+Date:   Fri Oct 28 15:20:17 2022 +0200
+
+    deuxiememodiff
+
+diff --git a/TP1 b/TP1
+index c903a0c..9b3ecda 100644
+--- a/TP1
++++ b/TP1
+@@ -1,4 +1,58 @@
  Q2) le répertoire .git à été créé
  
 +après il y a écrit ceci: Modifications qui seront validées :
 +  (utilisez "git rm --cached <fichier>..." pour désindexer)
 +       nouveau fichier : TP1
 +       nouveau fichier : nouveau_fichier
- 
- 
++
++
 +Q6) après avoir "commit" il ya ce message : 
 +
 +[master (commit racine) b910660] Un superMessage
@@ -104,8 +335,148 @@ index c903a0c..59460a7 100644
 +
 +
 +
++diff --git a/TP1 b/TP1
++index c903a0c..59460a7 100644
++--- a/TP1
+++++ b/TP1
++@@ -1,4 +1,24 @@
++ Q2) le répertoire .git à été créé
 + 
+++après il y a écrit ceci: Modifications qui seront validées :
+++  (utilisez "git rm --cached <fichier>..." pour désindexer)
+++       nouveau fichier : TP1
+++       nouveau fichier : nouveau_fichier
++ 
++ 
+++Q6) après avoir "commit" il ya ce message : 
+++
+++[master (commit racine) b910660] Un superMessage
+++ 2 files changed, 5 insertions(+)
+++ create mode 100644 TP1
+++ create mode 100644 nouveau_fichier
+++
+++puis après avoir fait git status il y a: Sur la branche master
+++
+++modification éem modification
+++mAKE,NFÛDIHAD
+++ADdADd
+++
+++
+++
+++ 
++ 
++https://github.com/Polytech-Sorbonne-OPI-2022/TP1-EISE3
++
++
+ 
+ 
+
+commit b9106609ed941a26df85d3a9fc29437bcce558d2
+Author: VictorVidjea <6701victor@gmail.com>
+Date:   Fri Oct 28 14:47:24 2022 +0200
+
+    Un superMessage
+
+diff --git a/TP1 b/TP1
+new file mode 100644
+index 0000000..c903a0c
+--- /dev/null
++++ b/TP1
+@@ -0,0 +1,4 @@
++Q2) le répertoire .git à été créé
++
++
++
+diff --git a/nouveau_fichier b/nouveau_fichier
+new file mode 100644
+index 0000000..02af42e
+--- /dev/null
++++ b/nouveau_fichier
+@@ -0,0 +1 @@
++$qdjfnô        zinjfizjfùpijzfnfqonzfôqfnvabfqdfjnfabefjffe
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+++modification éem modification
+++mAKE,NFÛDIHAD
+++ADdADd
+++
+++
+++
+++ 
++ 
++https://github.com/Polytech-Sorbonne-OPI-2022/TP1-EISE3
++
++
+ 
+ 
+
+commit b9106609ed941a26df85d3a9fc29437bcce558d2
+Author: VictorVidjea <6701victor@gmail.com>
+Date:   Fri Oct 28 14:47:24 2022 +0200
+
+    Un superMessage
+
+diff --git a/TP1 b/TP1
+new file mode 100644
+index 0000000..c903a0c
+--- /dev/null
++++ b/TP1
+@@ -0,0 +1,4 @@
++Q2) le répertoire .git à été créé
++
++
++
+diff --git a/nouveau_fichier b/nouveau_fichier
+new file mode 100644
+index 0000000..02af42e
+--- /dev/null
++++ b/nouveau_fichier
+@@ -0,0 +1 @@
++$qdjfnô        zinjfizjfùpijzfnfqonzfôqfnvabfqdfjnfabefjffe"
+
+Cela me montre toutes les modification du git ainsi que la date de la modification.
+
+
+
+après avoir fait git push 
+
  
 le site dans lequelle il faut commit le fichier:  https://github.com/Polytech-Sorbonne-OPI-2022/TP1-EISE3
-
 
