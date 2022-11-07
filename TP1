@@ -473,10 +473,36 @@ index 0000000..02af42e
 
 Cela me montre toutes les modification du git ainsi que la date de la modification.
 
+Q9)
 
+git diff nous montre les modifications que nous avons fait précédement et qui n'ont pas été commit:
 
-après avoir fait git push 
-
+"diff --git a/TP1 b/TP1
+index e989110..14ee062 100644
+--- a/TP1
++++ b/TP1
+@@ -480,3 +480,4 @@ après avoir fait git push
+  
+ le site dans lequelle il faut commit le fichier:  https://github.com/Polytech-Sorbonne-OPI-2022/TP1-EISE3
  
-le site dans lequelle il faut commit le fichier:  https://github.com/Polytech-Sorbonne-OPI-2022/TP1-EISE3
++modication"
+
+
+
+
+EX3
+
+
+Q1) la commande <programme>& permet de lancer un programme en arrière plan 
+
+
+Q3) c'est cd ~
+
+
+Q4) il nous montre tout les deossier et fichier de "home" mais le contenu de de tout les fichier et dossier qui "descende" de home
+(le contenu des dossiers dans home ainsi que le contenu de leurs dossiers et ainsi de suite) 
+cala nous montre l'arbre des fichier qui a pour racine "home"
+
+Q5)
+Il faut faire : cp ~/IMAGE/IMG216.jpg ~/Documents/TP/TP1/exo1.c ~/Document/TP/TP2 
 
